@@ -1,0 +1,83 @@
+.wrapper {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & .form {
+    & .title {
+      font-size: 36px;
+      text-align: center;
+    }
+
+    & .group-form-item {
+      display: flex;
+      width: 700px;
+      height: 24px;
+      margin: 20px;
+
+      & .label {
+        width: 260px;
+        font-size: 20px;
+        display: inline-block;
+      }
+
+      & .input {
+        flex-grow: 1;
+        height: 30px;
+        font-size: 18px;
+      }
+    }
+
+    & .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      padding: 0 20px;
+
+      & .register {
+        font-size: 16px;
+        & .navigate-btn {
+          color: rgba(0, 99, 199, 1);
+          margin-left: 4px;
+          text-decoration: none;
+        }
+      }
+
+      & .btn-group {
+        display: flex;
+        justify-content: end;
+
+        margin-top: 12px;
+
+        & .cancel-btn {
+          width: 120px;
+          height: 30px;
+          outline: none;
+          border-radius: 4px;
+          cursor: pointer;
+
+          &:hover {
+            background-color: rgba(255, 255, 255, 0.7);
+          }
+        }
+
+        & .submit-btn {
+          width: 120px;
+          height: 30px;
+          color: white;
+          border: none;
+          outline: none;
+          border-radius: 4px;
+          margin-left: 10px;
+          cursor: pointer;
+          background-color: rgba(0, 99, 199, 1);
+
+          &:hover {
+            opacity: 0.85;
+          }
+        }
+      }
+    }
+  }
+}
